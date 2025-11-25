@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <locale.h>
-
-//--- Constantes globais ---
-#define NUM_TERRITORIO 5
-#define TAM_NOME 50
-#define NUM_MISSOES 3
+//---Struct Territorio
+//--- Armazena informações básicas:
+//--- cor: cor do exército (sem espaços)
+//---tropas: quantidade de tropas
 
 //--- Estrutura de dados ---
-typedef struct {
-char nome [TAM_NOME];
-    char corExercito [TAM_NOME]; 
+struct Territorio {
+    char nome [30];
+    char corExercito [10]; 
     int tropas ; 
-}Territorio;
+};
 
-//---
+int main(){
+    struct Territorio Territorios [5];
+    int i;
+
+    printf ("=== Cadastro de territórios ===\n\n");
+
+// Entrada dos 5 Territórios 
+}
